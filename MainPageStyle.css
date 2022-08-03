@@ -1,0 +1,92 @@
+body {
+    margin: 0px;
+    background-color: rgb(18, 1, 63);
+    font-family: 'Segoe UI';
+    user-select: none;
+}
+
+.LoginTable {
+    background-color: white;
+    width: 70vh;
+    height: 70vh;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15vh;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px 10px rgb(137, 113, 199);
+}
+
+.LoginTableUserIcon {
+    box-shadow: 0px -10px 15px 10px rgb(137, 113, 199);
+    background-color: white;
+    border-radius: 360px;
+    width: 30vh;
+    height: 30vh;
+    position: absolute;
+    top: -12vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.LoginTableEntries {
+    background-color: white;
+    outline: none;
+    offset: none;
+    border: 0.5vh solid rgb(137, 113, 199);
+    box-shadow: 0px 0px 15px 5px rgb(101, 83, 146);
+    padding: 1vh;
+    overflow-y: hidden;
+    vertical-align: middle;
+    font-size: 3vh;
+    text-align: start;
+    height: 4vh;
+    resize: none;
+    border-radius: 15px;
+    position: relative;
+    width: 65vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    transition: 0.3s;
+}
+.LoginTableEntries:hover{
+    transform: scale(1.01);
+}
+.LoginTableEntryTitles{
+    color: black;
+    position: absolute;
+    font-size: 3vh;
+    left: 2vh;
+}
+.BackgroundSquareStyles{
+    background-color: rgb(80, 31, 209);
+    background-image: linear-gradient(to top right,rgb(44, 18, 109),rgb(107, 57, 235));
+    z-index: -1;
+    position: fixed;
+    border-radius: 90px;
+    box-shadow: 0px 0px 50px 5px black;
+}
+.LoginTableLoginButton{
+    background-image: linear-gradient(to top left,rgb(44, 18, 109),rgb(140, 96, 250));
+    border: none;
+    color: white;
+    left: 20vh;
+    height: 15vh;
+    width: 30vh;
+    top: 38vh;
+    border-radius: 15px;
+    font-size: 4vh;
+    box-shadow: -5px -5px 15px 5px rgb(163, 129, 248),
+    5px 5px 15px 5px rgb(93, 64, 167);
+    position: relative;
+    transition: 0.3s;
+}
+.LoginTableLoginButton:hover{
+    box-shadow:5px 5px 15px 5px rgb(93, 64, 167), 
+    -5px -5px 15px 5px rgb(163, 129, 248);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.LoginTableLoginButton:active{
+    transform: scale(0.95);
+}
